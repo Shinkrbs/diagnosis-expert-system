@@ -102,7 +102,6 @@ export default function HomePage() {
           </div>
 
           <div className="space-y-4">
-            {/* Note: 'name' attribute is crucial for the handler to work */}
             <div className="flex items-center">
               <input id="headache" name="headache" type="checkbox" checked={symptoms.headache} onChange={handleInputChange} className="h-4 w-4 text-sky-600 border-slate-300 rounded focus:ring-sky-500" />
               <label htmlFor="headache" className="ml-3 text-sm font-medium text-slate-700">Headache</label>
@@ -134,11 +133,11 @@ export default function HomePage() {
             <div className="space-y-4 text-left">
               <div>
                 <h3 className="font-semibold text-slate-700">Final Diagnosis:</h3>
-                <p className="text-lg font-bold text-blue-600 capitalize">{result.diagnosis}</p>
+                <p className="text-lg font-bold text-amber-600 capitalize">{result.diagnosis}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-slate-700">Recommended Treatment:</h3>
-                <p className="text-xl font-bold text-green-600">{result.treatment}</p>
+                <p className="text-xl font-bold text-amber-600">{result.treatment}</p>
               </div>
               <div className="pt-4 border-t border-slate-200">
                 <h3 className="font-semibold text-slate-700">Reasoning Steps:</h3>

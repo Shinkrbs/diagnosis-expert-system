@@ -45,13 +45,13 @@ export const runExpertSystem = (symptoms: Symptoms): DiagnosisResult => {
     // Rule 6: Diagnose a cold
     let diagnosis = 'unknown';
     if (
-    feverStatus === 'low fever' &&
-    symptoms.headache &&
-    nasalCondition === 'nasal discharge' &&
-    symptoms.cough
+        feverStatus === 'low fever' &&
+        symptoms.headache &&
+        nasalCondition === 'nasal discharge' &&
+        symptoms.cough
     ) {
-    diagnosis = 'cold';
-    steps.push('Rule 6: Low fever + Headache + Nasal Discharge + Cough → Cold');
+        diagnosis = 'cold';
+        steps.push('Rule 6: Low fever + Headache + Nasal Discharge + Cough → Cold');
     }
 
     // Rules 7, 8: Determine if treatment is needed
