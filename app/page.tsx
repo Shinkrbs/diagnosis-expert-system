@@ -58,7 +58,7 @@ export default function HomePage() {
       <main className="max-w-4xl w-full bg-white rounded-2xl shadow-xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <div className="flex flex-col space-y-6">
-          <h1 className="text-3xl font-bold text-amber-500">Medical Expert System</h1>
+          <h1 className="text-3xl font-bold text-amber-500">Diagnosis Expert System</h1>
           <p className="text-slate-600">Enter the patients symptoms below to get a recommended course of action.</p>
 
           <div>
